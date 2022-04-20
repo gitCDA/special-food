@@ -20,7 +20,7 @@
         <!-- component -->
       <div class="max-w-2xl mx-auto">
 
-        <form method="POST" action="{{ route("contact") }}">
+        <form method="POST" action="">
           {{-- génère un token pour protéger contre les CSRF --}}
           @csrf
           <label class="text-white" for="nom">Votre nom</label>
