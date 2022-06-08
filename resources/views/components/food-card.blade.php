@@ -21,8 +21,8 @@ class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex f
 
 <div class="bg-white shadow-lg rounded-lg -mt-4 w-64">
     <div class="py-5 px-5">
-{{--<a href="/detail/{{ $food->id }}">{{ $food->title }}<span class="font-bold text-gray-800 text-lg"></span></a> --}}
-    <a href=" {{ route("detail",[ "id" => $food->id ]) }} ">{{ $food->title }}<span class="font-bold text-gray-800 text-lg"></span></a>
+<!-- {{--<a href="/detail/{{ $food->id }}">{{ $food->title }}<span class="font-bold text-gray-800 text-lg"></span></a> --}} -->
+    <a href=" {{ route('detail',[ 'id' => $food->id ]) }} ">{{ $food->title }}<span class="font-bold text-gray-800 text-lg"></span></a>
     <div class="flex items-center justify-between">
         <div class="text-sm text-gray-600 font-light">
         Category : {{ $food->category_id }}

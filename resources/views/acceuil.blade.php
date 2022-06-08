@@ -13,7 +13,7 @@
           @foreach ($foods as $food)
 
             {{-- <x-food-card :myTitle="$item->title"
-                          :id="$item->id"/> --}}
+                                  :id="$item->id"/> --}}
           
             <x-food-card :food="$food"/>
  

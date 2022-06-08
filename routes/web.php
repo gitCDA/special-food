@@ -13,11 +13,12 @@ Route::get('/', [FoodController::class,"index"])->name("acceuil");
 Route::get('detail/{id}', [FoodController::class,"detail"])->name("detail");
 
 /* Affichage du formulaire contact
-            URL affichée                                         ce qu'on appelle */
-// Route::get('contactez-nous', [ContactController::class,"index"])->name("contact");
+            URL affichée                                 ce qu'on appelle dans le code */
+Route::get('contactez-nous', [ContactController::class,"index"])->name("contact");
+// Route::get('/contact', [FoodController::class,"index"]);
 
-// réception des données du formulaire en POST
-// Route::post('contactez-nous', [ContactController::class,"save"])->name("contact");
+// réception et enregistrment des données du formulaire en POST
+Route::post('contactez-nous', [ContactController::class,"save"])->name("contact");
 
 
 

@@ -27,7 +27,8 @@
 
         {{-- 2ème icone --}}
         <li class="mt-3 t">
-          <a href="" class="flex flex-col items-center text-sm capitalize">
+          {{--     helper pour nom de la route --}}
+          <a href="{{ route('contact') }}" class="flex flex-col items-center text-sm capitalize">
 
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
